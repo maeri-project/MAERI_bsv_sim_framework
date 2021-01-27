@@ -19,7 +19,7 @@ This version of MAERI framework supports simulation from arbitrary convolution l
 • MAERI: https://github.com/georgia-tech-synergy-lab/MAERI
 ## Ready to run the simulation?
 ```
-git clone https://github.com/JianmingTONG/MAERI_framework
+git clone https://github.com/georgia-tech-synergy-lab/MAERI_framework
 ./install_MAERI_simulation.sh 
 cd MAERI/
 rm ./Layer_Info.vmh 
