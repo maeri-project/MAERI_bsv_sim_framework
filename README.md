@@ -1,6 +1,10 @@
 # MAERI_framework
 
 This version of MAERI framework supports simulation from arbitrary convolution layer offered in Keras (Tensorflow backend) to get the **runtime emulation of MAERI**. All the configuration for MAERI will be generated automatically by the Simulation Framework.
+
+Note: We could use size from keras to configure the MAERI with the dummy data flowing through MAERI, such process will not impact the runtime profermance (Specifically the number of cycles the model takes to run on the MAERI). 
+
+
 # Steps to start simulation
 ## Prerequiste
 • system: ubuntu 18.04.2 LTS (or any alternative version supporting the following packages)
