@@ -15,9 +15,9 @@ Note: We could use size from keras to configure the MAERI with the dummy data fl
 
 • scons: www.sourceforge.net/project/scons
 
-• keras: 2.3.1
+• keras: 2.4.3
 
-• tensorflow: 1.14.0
+• tensorflow: 2.4.1
 
 • mRNA: https://github.com/georgia-tech-synergy-lab/mRNA (need to install all the prerequistes listed on this github link.)
 
@@ -30,10 +30,11 @@ cd MAERI/
 rm ./Layer_Info.vmh 
 rm ./RN_Config.vmh 
 cd mRNA/
-sudo make -j8
-sudo make install
+make -j8
 cd ../simulation_framework/
-# edit the simulation_framework.py to change the path
+# edit the simulation_framework.py to change the configuration of MAERI. Specifically, 
+# 1. which layer of what Model
+# 2. configuration of MAERI, including distribution bandwidth, collection bandwidth, number of multiplers
 vim simulation_framework.py
 python3 simulation_framework.py
 cd MAERI/
