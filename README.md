@@ -22,6 +22,13 @@ Note: We could use size from keras to configure the MAERI with the dummy data fl
 • mRNA: https://github.com/georgia-tech-synergy-lab/mRNA (need to install all the prerequistes listed on this github link.)
 
 • MAERI: https://github.com/georgia-tech-synergy-lab/MAERI
+
+## Requirement
+
+tested working on python3.6
+
+keras lastest version 
+
 ## Ready to run the simulation?
 ```
 git clone https://github.com/georgia-tech-synergy-lab/MAERI_framework
@@ -29,15 +36,16 @@ git clone https://github.com/georgia-tech-synergy-lab/MAERI_framework
 cd MAERI/
 rm ./Layer_Info.vmh 
 rm ./RN_Config.vmh 
-cd mRNA/
+cd ../mRNA/
 make -j8
 cd ../simulation_framework/
+# by default, we are running the first conv layer of VGG16 network.
 # edit the simulation_framework.py to change the configuration of MAERI. Specifically, 
 # 1. which layer of what Model
 # 2. configuration of MAERI, including distribution bandwidth, collection bandwidth, number of multiplers
 vim simulation_framework.py
 python3 simulation_framework.py
-cd MAERI/
+cd ../MAERI/
 ./MAERI -c all
 ./MAERI -r
 # you will wait for a long time for simulation
