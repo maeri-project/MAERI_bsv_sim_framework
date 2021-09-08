@@ -19,9 +19,9 @@ Note: We could use size from keras to configure the MAERI with the dummy data fl
 
 • tensorflow: 2.4.1
 
-• mRNA: https://github.com/georgia-tech-synergy-lab/mRNA (need to install all the prerequistes listed on this github link.)
+• mRNA: https://github.com/maeri-project/mRNA (need to install all the prerequistes listed on this github link.)
 
-• MAERI: https://github.com/georgia-tech-synergy-lab/MAERI
+• MAERI: https://github.com/maeri-project/MAERI_bsv
 
 ## Requirement
 
@@ -31,7 +31,7 @@ keras lastest version
 
 ## Ready to run the simulation?
 ```
-git clone https://github.com/georgia-tech-synergy-lab/MAERI_framework
+git clone https://github.com/maeri-project/MAERI_Framework
 ./install_MAERI_simulation.sh 
 cd MAERI/
 rm ./Layer_Info.vmh 
