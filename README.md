@@ -1,4 +1,14 @@
 # MAERI_framework
+```
+@misc{maeri_bsv_sim,
+  author = {Tong, Jianming and Krishna, Tushar},
+  title = {MAERI Simulation Framework - based on Bluespec Verilog},
+  year = {2021},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/maeri-project/MAERI_bsv_sim_framework}},
+}
+```
 ![System Overview](./img/system.png "超链接title")
 
 This version of MAERI framework supports simulation from arbitrary convolution layer offered in Keras (Tensorflow backend) to get the **runtime emulation of MAERI**. All the configuration for MAERI will be generated automatically by the Simulation Framework.
